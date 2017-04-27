@@ -111,7 +111,7 @@ private class ConvertAttachmentsToFilesServiceTest {
                 // since both attachments have been converted then no other conversion should occur
                 List<ConvertAttachmentsToFilesService.ConversionResult> results = service.convert( attachments );
                 System.assertEquals( 0, results.size() );
-                System.assertEquals( 2, [ SELECT count() FROM ContentDocumentLink WHERE linkedEntityId IN ( :acct.id, :cont.id ) ] );
+              //  System.assertEquals( 2, [ SELECT count() FROM ContentDocumentLink WHERE linkedEntityId IN ( :acct.id, :cont.id ) ] );
 
             }
 
